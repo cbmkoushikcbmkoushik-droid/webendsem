@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Constitution Awareness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-page">
+  <div class="login-card register-card">
+    <h2>Student Registration</h2>
+    <p class="subtitle">Create your account</p>
+
+    <input type="text" id="fullName" placeholder="Full Name" required>
+    <input type="email" id="registerEmail" placeholder="Email ID" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="password" id="registerPassword" placeholder="Password" required>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+    <label class="checkbox-label">
+      <input type="checkbox" id="terms" required>
+      I agree to the Terms & Conditions
+    </label>
+
+    <button onclick="register()">Register</button>
+
+    <p class="link">
+      Already registered? <a href="index.html">Login here</a>
+    </p>
+
+    <p id="registerMsg"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

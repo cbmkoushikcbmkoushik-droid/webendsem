@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Constitution Awareness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginContainer" class="login-page">
+  <div class="login-card">
+    <h2>Student Login</h2>
+
+    <input type="email" id="loginEmail" placeholder="Email ID" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+
+    <button onclick="login()">Login</button>
+
+    <p class="link">New user? <a href="register.html">Register here</a></p>
+    <p class="link"><a href="home.html">Back to Home</a></p>
+
+    <p id="loginMsg"></p>
+  </div>
+</div>
+
+<div id="mainContent" style="display:none;">
+  <header>
+    <h1>🇮🇳 Indian Constitution Awareness 🇮🇳</h1>
+    <p>Building a strong understanding of our Constitution</p>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="javascript:showPage('home')" class="nav-link active" data-page="home">🏠 Home</a></li>
+      <li><a href="javascript:showPage('rights')" class="nav-link" data-page="rights">👤 Rights</a></li>
+      <li><a href="javascript:showPage('duties')" class="nav-link" data-page="duties">🎯 Duties</a></li>
+      <li><a href="javascript:showPage('government')" class="nav-link" data-page="government">🏛️ Government</a></li>
+      <li><a href="javascript:showPage('articles')" class="nav-link" data-page="articles">📜 Key Articles</a></li>
+      <li><a href="javascript:showPage('history')" class="nav-link" data-page="history">📚 History</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+    <section id="home-page" class="content-section active">
+      <h2>About the Indian Constitution</h2>
+      <p>The Constitution of India is the supreme law of India. It came into effect on January 26, 1950, making India a sovereign democratic republic.</p>
+      
+      <div class="duty duty-1">
+        <h3>📜 What is the Constitution?</h3>
+        <p>The Constitution is a set of fundamental principles and rules that define the powers and duties of the government and guarantee certain rights to its citizens.</p>
+      </div>
+
+      <div class="duty duty-2">
+        <h3>✍️ Who Drafted it?</h3>
+        <p>The Constitution was drafted by the Constituent Assembly headed by Dr. B.R. Ambedkar, the Chairman of the Drafting Committee. It took 2 years, 11 months, and 18 days to draft.</p>
+      </div>
+
+      <div class="duty duty-3">
+        <h3>⚖️ Key Features</h3>
+        <ul>
+          <li><strong>Federalism:</strong> Division of powers between Union and States</li>
+          <li><strong>Parliamentary System:</strong> Government responsible to Parliament</li>
+          <li><strong>Separation of Powers:</strong> Legislature, Executive, Judiciary</li>
+          <li><strong>Rule of Law:</strong> No one is above the law</li>
+          <li><strong>Fundamental Rights:</strong> Protection of citizens' rights</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section id="rights-page" class="content-section">
+      <h2>Fundamental Rights</h2>
+      <p>Fundamental Rights are the basic human rights guaranteed to all citizens of India by the Constitution.</p>
+
+      <div class="duty duty-1">
+        <h3>📋 Right to Equality (Articles 14-18)</h3>
+        <ul>
+          <li>Equality before the law</li>
+          <li>Equal protection of laws</li>
+          <li>No discrimination by the State</li>
+          <li>No discrimination in public places</li>
+          <li>Abolition of titles</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-2">
+        <h3>🗣️ Right to Freedom (Articles 19-22)</h3>
+        <ul>
+          <li>Freedom of speech and expression</li>
+          <li>Freedom to assemble peacefully</li>
+          <li>Freedom to form associations</li>
+          <li>Freedom to move freely</li>
+          <li>Freedom to settle anywhere</li>
+          <li>Right to property</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-3">
+        <h3>🚫 Right against Exploitation (Articles 23-24)</h3>
+        <ul>
+          <li>Prohibition of traffic in human beings and forced labor</li>
+          <li>Prohibition of employment of children in hazardous jobs</li>
+          <li>Protection of child laborers</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-4">
+        <h3>🙏 Right to Freedom of Religion (Articles 25-28)</h3>
+        <ul>
+          <li>Freedom to profess, practice and propagate religion</li>
+          <li>Freedom to manage religious affairs</li>
+          <li>Freedom from paying religious taxes</li>
+          <li>Freedom from religious instruction in schools</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-5">
+        <h3>📚 Cultural and Educational Rights (Articles 29-30)</h3>
+        <ul>
+          <li>Protection of minority interests</li>
+          <li>Right to establish educational institutions</li>
+          <li>Equal educational opportunities for all</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section id="duties-page" class="content-section">
+      <h2>Fundamental Duties</h2>
+      <p>Fundamental Duties are the moral obligations of all citizens towards the nation, as per Article 51-A.</p>
+
+      <div class="duty duty-1">
+        <h3>🇮🇳 Primary Duties</h3>
+        <ul>
+          <li>To respect the Constitution and the laws of India</li>
+          <li>To cherish and follow the noble ideals of freedom struggle</li>
+          <li>To uphold and protect the sovereignty and integrity of India</li>
+          <li>To defend the country when called upon</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-2">
+        <h3>🤝 Social Duties</h3>
+        <ul>
+          <li>To promote harmony and spirit of brotherhood among all people</li>
+          <li>To value the composite culture of India</li>
+          <li>To protect public property</li>
+          <li>To avoid violence and peaceful settlement of disputes</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-3">
+        <h3>🧠 Educational Duties</h3>
+        <ul>
+          <li>To develop a scientific temper and spirit of inquiry</li>
+          <li>To promote excellence in education</li>
+          <li>To spread awareness about rights and duties</li>
+          <li>To protect the environment and wildlife</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-4">
+        <h3>🌍 Environmental Duties</h3>
+        <ul>
+          <li>To protect and improve the natural environment</li>
+          <li>To conserve forests and wildlife</li>
+          <li>To safeguard the national heritage</li>
+          <li>To minimize pollution</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section id="government-page" class="content-section">
+      <h2>Structure of Government</h2>
+      <p>The Indian Government is structured on the principle of separation of powers with three main branches.</p>
+
+      <div class="duty duty-1">
+        <h3>⚖️ Executive Branch</h3>
+        <ul>
+          <li><strong>President:</strong> Constitutional head of state (5-year term)</li>
+          <li><strong>Vice-President:</strong> Ex-officio Chairman of Rajya Sabha</li>
+          <li><strong>Prime Minister:</strong> Head of Government, leader of majority</li>
+          <li><strong>Council of Ministers:</strong> Cabinet ministers and ministers of state</li>
+          <li><strong>Functions:</strong> Implementation of laws and policies</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-2">
+        <h3>📜 Legislative Branch</h3>
+        <ul>
+          <li><strong>Lok Sabha:</strong> Lower house (House of People) - 543 elected members + 2 nominated</li>
+          <li><strong>Rajya Sabha:</strong> Upper house (Council of States) - 245 members</li>
+          <li><strong>Functions:</strong> Law-making, budget approval, public grievances</li>
+          <li><strong>Term:</strong> Lok Sabha - 5 years, Rajya Sabha - 6 years (1/3 retire every 2 years)</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-3">
+        <h3>⚔️ Judicial Branch</h3>
+        <ul>
+          <li><strong>Supreme Court:</strong> Apex court, Chief Justice + 30 judges</li>
+          <li><strong>High Courts:</strong> One in each state, appellate and original jurisdiction</li>
+          <li><strong>District Courts:</strong> Lower courts at district level</li>
+          <li><strong>Functions:</strong> Interpretation of laws, judicial review, resolving disputes</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-4">
+        <h3>🔄 Checks and Balances</h3>
+        <ul>
+          <li>No branch can exercise unlimited power</li>
+          <li>Each branch checks and balances the others</li>
+          <li>Ensures accountability and transparency</li>
+          <li>Protects democratic principles</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section id="articles-page" class="content-section">
+      <h2>Key Constitutional Articles</h2>
+      <p>Important articles that define the structure and rights in the Indian Constitution.</p>
+
+      <div class="duty duty-1">
+        <h3>📌 Articles 1-4: Union and Territory</h3>
+        <ul>
+          <li>Article 1: India is a Union of States</li>
+          <li>Article 2: Parliament can admit new states</li>
+          <li>Article 3: Parliament can alter states</li>
+          <li>Article 4: Consequential provisions on alteration of states</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-2">
+        <h3>👥 Articles 5-11: Citizenship</h3>
+        <ul>
+          <li>Article 5: Citizenship at the commencement of Constitution</li>
+          <li>Article 6: Rights of citizenship of certain persons who have migrated to India</li>
+          <li>Article 8: Rights of citizenship of persons of Indian origin residing outside India</li>
+          <li>Article 11: Parliament to regulate rights of citizenship</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-3">
+        <h3>⚖️ Articles 12-35: Fundamental Rights</h3>
+        <ul>
+          <li>Article 12-18: Right to Equality</li>
+          <li>Article 19-22: Right to Freedom</li>
+          <li>Article 23-24: Right against Exploitation</li>
+          <li>Article 25-28: Right to Freedom of Religion</li>
+          <li>Article 29-30: Cultural and Educational Rights</li>
+          <li>Article 32-35: Right to Constitutional Remedies</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-4">
+        <h3>📋 Articles 36-51: Directive Principles of State Policy</h3>
+        <ul>
+          <li>Non-justiciable guidelines for state policies</li>
+          <li>Focus on social and economic justice</li>
+          <li>Goals for welfare state development</li>
+          <li>Protection of workers and environment</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-5">
+        <h3>🎖️ Articles 51-A: Fundamental Duties</h3>
+        <ul>
+          <li>Moral obligations of all citizens</li>
+          <li>10 fundamental duties listed</li>
+          <li>Added by 42nd Amendment (1976)</li>
+          <li>Non-enforceable but morally binding</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section id="history-page" class="content-section">
+      <h2>History of the Indian Constitution</h2>
+      <p>The journey from drafting to adoption of India's greatest democratic document.</p>
+
+      <div class="duty duty-1">
+        <h3>📅 Timeline of Events</h3>
+        <ul>
+          <li><strong>December 9, 1946:</strong> Constituent Assembly convened</li>
+          <li><strong>January 26, 1949:</strong> Constitution drafted and adopted</li>
+          <li><strong>January 26, 1950:</strong> Constitution came into effect, India became a republic</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-2">
+        <h3>👨‍⚖️ Key Architects</h3>
+        <ul>
+          <li><strong>Dr. B.R. Ambedkar:</strong> Chairman of Drafting Committee, "Father of the Constitution"</li>
+          <li><strong>Pandit Jawaharlal Nehru:</strong> First Prime Minister, vision for independent India</li>
+          <li><strong>Dr. Rajendra Prasad:</strong> First President, guiding force</li>
+          <li><strong>Pandit Moti Lal Nehru:</strong> Constitutional advisor</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-3">
+        <h3>📊 Constitution Statistics</h3>
+        <ul>
+          <li><strong>Time Taken:</strong> 2 years, 11 months, and 18 days</li>
+          <li><strong>Number of Articles:</strong> 395 (now 470+)</li>
+          <li><strong>Schedules:</strong> 12 (now expanded)</li>
+          <li><strong>Amendments Made:</strong> Over 100+ amendments</li>
+          <li><strong>Pages:</strong> 251 pages (longest written constitution)</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-4">
+        <h3>🎯 Key Moments</h3>
+        <ul>
+          <li>Dr. Ambedkar's historic speech on adoption</li>
+          <li>Constitution signed by 284 members</li>
+          <li>Declaration of India as a Sovereign Democratic Republic</li>
+          <li>Establishment of Constitutional Court (Supreme Court)</li>
+          <li>Expansion of rights through amendments</li>
+        </ul>
+      </div>
+
+      <div class="duty duty-5">
+        <h3>📈 Evolution and Amendments</h3>
+        <ul>
+          <li><strong>42nd Amendment (1976):</strong> Added Fundamental Duties</li>
+          <li><strong>44th Amendment (1978):</strong> Changed "Right to Property" to Constitutional Right</li>
+          <li><strong>73rd Amendment (1992):</strong> Local self-government institutions</li>
+          <li><strong>74th Amendment (1992):</strong> Urban local bodies</li>
+          <li><strong>Recent Amendments:</strong> Inclusion of new rights and protections</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Indian Constitution Awareness Portal | Learn, Understand, Participate</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
